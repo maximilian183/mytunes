@@ -9,7 +9,7 @@ var PlayerView = Backbone.View.extend({
     //listen for ended event and call dequeue on current SongModel
     this.$el.on('ended', function() {
       this.model.dequeue();
-    }.bind(this))
+    }.bind(this));
   },
 
   setSong: function(song) {
